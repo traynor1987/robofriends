@@ -31,7 +31,7 @@ class App extends Component {
             return robot.name.toLowerCase().includes(searchfield.toLowerCase())
         })
 
-    if(robots.length === 0) {
+    if(!robots.length) {
         return <div className="loader"></div>
     } else {
         return(
